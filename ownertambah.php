@@ -1,0 +1,133 @@
+<?php
+require "koneksi.php";
+session_start();
+if ($_SESSION["username"]=="login_dulu"){
+    header("Location: login.php");
+  }
+  if ($_SESSION["username"]!="owner"){
+    header("Location: login.php");
+  }
+$yang_login = $_GET["user_name"];
+$sql = "SELECT * FROM $yang_login";
+$result = mysqli_query($conn,$sql);
+$reset_ready="SELECT * FROM list_yang_main WHERE username = '$yang_login'";
+$result_reset= $conn->query($reset_ready);
+if ($result_reset->num_rows > 0) {
+    $reset_update = "UPDATE list_yang_main SET ready ='no' where username = '$yang_login'";
+    $conn->query($reset_update);
+} 
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body id="halaman_koleksi">
+    <header id="header_duel">
+        <nav>
+
+          <ul>
+            <li><a class="animate__animated animate__fadeInUp" href="ownerpilih.php" >Kembali</a></li>
+            <li><a class="animate__animated animate__fadeInUp" href="ownertambah.php?user_name=<?php echo $yang_login ?>" style="text-transform: uppercase;"><?php echo $yang_login ?></a></li>
+            <li><a class= "animate__animated animate__fadeInUp"href="ownerpilih.php">Kembali</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+       <div>
+     <h2 class="animate__animated animate__fadeInUp" id="judul_koleksi">TAMBAH KARTU USER</h2>
+        <div>
+            
+      
+      
+     
+         
+        <div class="animate__animated animate__fadeInUp slideshow-container1" style="display:none;">
+        <img class="animate__animated animate__fadeInUp" src="card/mewtwoimg.jpg"id="slideshow-container1" alt="MewTwo"style="display:none;">
+        </div> 
+        <form action="arena.php" method="get">
+            <button id="confirm-button1" type="submit" style="display:none;">Konfirmasi</button>
+            <input type="hidden" name="data">
+            <input type="hidden" name="dataOverall">
+            </form>
+
+        <div class="container_koleksi animate__animated animate__fadeInUp">
+  <?php 
+    while($row = mysqli_fetch_assoc($result)) { ?>
+      <div class="image_container_koleksi">
+        <img class="animate__animated animate__fadeInUp" src="<?php echo $row['link']?>" alt="<?php echo $row['kartu']?>"overall="<?php echo $row['overall']?>" idKartu="<?php echo $row['id']?>">
+       
+      </div>
+  <?php } ?>
+   
+  <button class="button-tambah-owner" onclick="location.href='prosestambah.php?user_name=<?php echo $yang_login ?>'">+</button>
+
+  
+ 
+  
+</div>
+        
+      </main>
+
+</body>
+<script>
+
+
+function scrollToTop() {
+  var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+  if (currentPosition > 50) {
+    window.requestAnimationFrame(scrollToTop);
+    window.scrollTo(50, currentPosition - currentPosition / 80);
+  }
+}
+function sortCards(sortType) {
+  const container = document.querySelector(".container_koleksi");
+  const cards = container.children;
+  const cardsArr = Array.from(cards);
+
+  if (sortType === "desc") {
+    cardsArr.sort((a, b) => {
+      const aId = parseInt(a.querySelector("img").getAttribute("idKartu"));
+      const bId = parseInt(b.querySelector("img").getAttribute("idKartu"));
+      return bId - aId;
+    });
+  } else if (sortType === "asc") {
+    cardsArr.sort((a, b) => {
+      const aId = parseInt(a.querySelector("img").getAttribute("idKartu"));
+      const bId = parseInt(b.querySelector("img").getAttribute("idKartu"));
+      return aId - bId;
+    });
+  }
+
+  container.innerHTML = "";
+  cardsArr.forEach(card => container.appendChild(card));
+}
+
+
+
+
+document.addEventListener('copy', function(event) {
+  event.preventDefault();
+  alert('Copying is not allowed on this website');
+});
+
+document.addEventListener('selectstart', function(e) {
+  e.preventDefault();
+});
+
+
+
+
+document.getElementById("log_out").addEventListener("click", function(event){
+			event.preventDefault();
+			var result = confirm("Apakah Anda yakin ingin meninggalkan permainan?");
+			if (result) {
+				window.location.href = "index.php";
+			}
+		});
+</script>
+</html>

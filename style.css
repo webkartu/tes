@@ -1,0 +1,2298 @@
+
+/* css home.html */
+@font-face {
+  font-family:'pokefont';
+  src: url(font/PokemonSolid.ttf) format('truetype');
+}
+@font-face {
+  font-family:'pokefont2';
+  src: url(font/PokemonHollow.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'fontbaru';
+  src: url(font/MarvelRegular-Dj83.ttf) format('truetype');
+     
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #halaman_home {
+    
+    max-width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.3)),url(background/bgnew.gif);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center top;
+ }
+ nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+  #header_home {
+    margin-bottom: 0;
+    background-color: #000000;
+    height: 70px;
+    padding: 10px 20px;
+  }
+ 
+  #header_home nav ul li a {
+    color: white;
+    font-size: 28px;
+    font-family: 'pokefont', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    
+    cursor: pointer;
+  }
+  #header_home nav ul li a:hover {
+    color: rgb(167, 134, 69);
+    font-size: 32px;
+  }
+
+  #header_duel nav ul li a:hover {
+    color: rgb(167, 134, 69);
+    font-size: 32px;
+  }
+
+
+  #header_register {
+    margin-bottom: 0;
+    background-color: #000000;
+    height: 70px;
+    padding: 10px 20px;
+  }
+  #header_register nav ul li a {
+    color: white;
+    font-size: 28px;
+    font-family: 'pokefont', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    
+    cursor: pointer;
+  }
+  #header_register nav ul li a:hover {
+    color: rgb(167, 134, 69);
+    font-size: 32px;
+  }
+
+  #header_login {
+    margin-bottom: 0;
+    background-color: #000000;
+    height: 70px;
+    padding: 10px 20px;
+  }
+  #header_login nav ul li a {
+    color: white;
+    font-size: 28px;
+    font-family: 'pokefont', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    
+    cursor: pointer;
+  }
+  #header_login nav ul li a:hover {
+    color: rgb(167, 134, 69);
+    font-size: 32px;
+  }
+
+  #login_username,#register_username,#login_password,#register_password{
+    font-family: "fontbaru";
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  
+  nav ul li a#home_button {
+    
+    padding-bottom: 10px;
+  }
+  nav ul li a#login_button{
+    color: rgb(167, 134, 69);
+  }
+  nav ul li a#login_button_home {
+   
+    padding-bottom: 10px;
+    margin-left: 40px;
+  }
+  nav ul li a#login_button_regis {
+   
+    padding-bottom: 10px;
+    margin-left: 40px;
+  }
+  nav ul li a#register_button {
+    
+    color: rgb(167, 134, 69);
+    padding-bottom: 10px;
+  }
+  #header_game nav ul li a#gacha_button {
+    
+    color: rgb(167, 134, 69);
+    padding-bottom: 10px;
+    margin-left: 40px;
+  }
+  nav ul li a#gacha_koleksi {
+    
+    padding-bottom: 10px;
+    margin-left: 70px;
+  }
+  
+  nav ul li a#koleksi:hover {
+    background-color: #00000081;
+    color: #580909;
+  }
+
+
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  .intro {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  
+  .play-btn {
+    padding-top: 5px;
+    background-color: #00000000;
+    font-family: 'pokefont2', sans-serif;
+    color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  
+  .konten {
+   
+    margin-bottom: 50px;
+}
+.konten h2 {
+ font-family:'pokefont', Times, serif;
+ text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+ letter-spacing: 3px;
+font-size: 2em;
+margin-bottom: 20px;
+color:rgb(255, 255, 255);
+}
+.konten h2:hover {
+  transition: font-size 0.3s ease-in-out;
+  font-size: 2.2em;
+  
+ }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* atur durasi dan jenis animasi */
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* gunakan animasi fadeInUp untuk elemen h2 */
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+}
+
+
+.konten ul {
+list-style: none;
+font-size: 1.2em;
+line-height: 1.6;
+margin-bottom: 20px;
+transition: font-size 0.3s ease-in-out;
+  
+}
+.konten ul:hover {
+  
+  transition: font-size 0.3s ease-in-out;
+    font-size: 1.3em;
+  }
+.konten ul li {
+    font-family: "";
+    color: white;
+    text-shadow: 3px 3px 6px black;
+
+
+}
+.gradient-text {
+  background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.intro {
+  margin-top: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'pokefont', sans-serif;
+  color: white;
+  -webkit-text-stroke-width:2px;
+  -webkit-text-stroke-color: black;
+  letter-spacing: 10px;
+  padding-right: 0;
+  font-size: 3em;
+}
+
+ .intro:hover
+{
+  transition: font-size 0.3s ease-in-out;
+  
+  font-size: 3.1em;
+  }
+
+  
+  .text-timbul {
+    position: relative;
+    animation: timbul 0.8s forwards;
+    opacity: 0;
+  }
+
+  @keyframes timbul {
+    to {
+      transform: translateY(-20px);
+      opacity: 1;
+    }
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* sesuaikan dengan tinggi footer Anda */
+    background-color: #111111; /* sesuaikan dengan warna background footer Anda */
+    color: #fff; /* sesuaikan dengan warna teks footer Anda */
+    text-align: center;
+    padding-top: 10px;
+  }
+ 
+  footer p{
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow:3px 3px 6px #000000;
+    color:white;
+  }
+  .kartu {
+    display: flex;
+    width: 300px;
+    padding-left: 0%;
+  }
+ 
+
+
+.kartu h2 {
+
+font-size: 10px;
+margin-bottom: 20px;
+}
+.kartu img {
+
+width: 40%;
+float: left;
+margin-bottom: 20px;
+}
+
+/* end of line  */
+
+/* halaman login */
+#halaman_login{
+    max-width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.3)),url(background/bgnew.gif);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-position: center top;
+  }
+  
+  #login-form,#register-form{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    
+  }
+  label[for="password"],label[for="username"]{
+    text-shadow: 5px 5px 6px #000000;
+    font-family:'pokefont', sans-serif ;
+    letter-spacing: 2px;
+    color:white;
+   
+    display: block;
+    margin-bottom: 10px;
+  }
+  label[for="showpass"] {
+    color: rgb(233, 233, 233);
+    font-size: 15px;
+  }
+  
+
+  
+  
+  input[type="text"],
+  input[type="password"] {
+    font-family: 'fontbaru', sans-serif;
+   
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+   
+  
+  input[type="submit"] {
+    font-family: 'pokefont', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-shadow: 2px 2px 5px #333;
+    background-color: #3d033c;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover{
+    background-color: #fff;
+    color: #3a0431;
+  }
+  
+  
+  #header_koleksi {
+    margin-bottom: 0;
+    background-color: #000000;
+    height: 70px;
+    padding: 10px 20px;
+  }
+  #header_koleksi nav ul li a {
+    color: white;
+    font-size: 28px;
+    font-family: 'pokefont', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    
+    cursor: pointer;
+  }
+   
+  #header_duel {
+    margin-bottom: 0;
+    background-color: #000000;
+    height: 70px;
+    padding: 10px 20px;
+  }
+  #header_duel nav ul li a {
+    color: white;
+    font-size: 28px;
+    font-family: 'pokefont', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    
+    cursor: pointer;
+  }
+  
+  nav ul li a#hal-duelhome { 
+    
+    color: rgb(167, 134, 69);
+    padding-bottom: 10px;
+    margin-left: 40px;
+  }
+  nav ul li a#koleksi { 
+    
+    color: rgb(167, 134, 69);
+    padding-bottom: 10px;
+    margin-left: 40px;
+  }
+  #header_koleksi nav ul li a #arena{
+    color: rgb(167, 134, 69);
+    
+    
+  }
+  #header_koleksi nav ul li a:hover {
+    color: rgb(167, 134, 69);
+    font-size: 32px;
+  }
+  #error-message {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  #error-message.show {
+    display: block;
+  }
+  
+  #login-form {
+    margin-top: 10px;
+  }
+  
+  #login-form p a,#register-form p a{
+    
+    padding-top: 10px;
+    color: #ffffff;
+  }
+  #login-form p a:hover,#register-form p a:hover{
+    
+    padding-top: 10px;
+    color: #910000;
+  }
+  #login-form p {
+    
+    padding-top: 10px;
+    color: #fff;
+  }
+  #login-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3a0431;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #login-form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #3a0431;
+  }
+/* halaman game */
+#halaman_game{
+   
+    max-width: 100%;
+    height: 1000px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.3)),url(background/bgnew.gif);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center top;
+  }
+  #halaman_koleksi{
+   
+    max-width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.3)),url(background/bgkoleksi.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center top;
+  }
+  #header_game {
+    margin-bottom: 0;
+    background-color: #000000;
+    height: 70px;
+    padding: 10px 20px;
+  }
+  #header_game nav ul li a {
+    color: white;
+    font-size: 28px;
+    font-family: 'pokefont', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    
+    cursor: pointer;
+  }
+  #header_game nav ul li a:hover {
+    color: rgb(167, 134, 69);
+    font-size: 32px;
+  }
+
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    width: 290px;
+    height: 390px;
+    border: 10px solid rgba(238, 255, 0, 0);
+    overflow: hidden;
+    border-radius: 8px;
+}
+.slideshow-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px white;
+}
+
+.slideshow-container1 {
+  position: relative;
+  margin: auto;
+  width: 290px;
+  height: 390px;
+  border: 10px solid rgba(238, 255, 0, 0);
+  overflow: hidden;
+}
+.slideshow-container1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  border-radius: 8px;
+}
+
+
+.slideshow-container img.active {
+    opacity: 1;
+}
+
+#halaman_register{
+  max-width: 100%;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.3)),url(background/bgnew.gif);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-position: center top;
+}
+  
+      main .div_tentang h1{
+        text-shadow: 3px 3px 6px black;
+        padding-left: 53px;
+        font-family: 'fontbaru', sans-serif;
+        letter-spacing: 2px;
+    color: rgb(233, 223, 223);
+    text-align: center;
+  }
+  main .div_tentang h2{
+    text-align: center;
+    text-shadow: 3px 3px 6px black;
+    font-size: 8;
+    color: rgb(175, 175, 175);
+    font-family: 'Times New Roman', Times, serif;
+  }
+  nav ul li a #login{
+    padding-right: 50px;
+  }
+  .gacha-container {
+    display: grid;
+    grid-template-areas:
+      "notification"
+      "button";
+    grid-template-rows: auto 1fr;
+    height: 30vh;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .notification {
+    
+    text-align: center;
+    grid-area: notification;
+    position: relative;
+     
+    background-color: #000000;
+    border: 1px solid #000;
+    padding: 10px;
+    z-index: 700;
+    color: white;
+    letter-spacing: 3px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 60%);
+    margin-top: 180px;
+    
+  }
+
+  
+  .gacha-button {
+    grid-area: button;
+    background: linear-gradient(to right, #7e8d29, #d3ab33);
+    color: white;
+    padding: 0px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    text-shadow: 3px 3px 6px #000000;
+    font-family: 'pokefont', sans-serif;
+    letter-spacing: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    margin-bottom: 50px;
+    
+}
+  
+  .gacha-button:hover{
+    background: rgb(216, 211, 211);
+    color: black;
+    text-shadow: 0px 0px 0px #000000;
+    
+  }
+  
+  #register-form {
+    margin-top: 10px;
+  }
+  
+  #register-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3a0431;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #register-form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #3a0431;
+  }
+
+  #kotak_masuk {
+    padding-bottom: 10px;
+    display: none;
+    position: fixed;
+    margin-top: -110px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    background-color:#5809097e;
+    
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    z-index: 9999;
+    
+
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+  
+#select_box {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: center;
+}
+#kotak_batal {
+  color:rgb(224, 224, 224);
+  float: left;
+  background-color:transparent;
+  border: none;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+#kotak_batal:hover{
+ 
+ color: white;
+}
+#kotak_masuk_kalimat p#judul {
+  text-shadow: 5px 5px 6px #000000;
+  color: rgb(204, 204, 204);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+  background-color: #58090971;
+  padding-bottom: 0px;
+  letter-spacing: 5px;
+}
+#kotak_masuk_kalimat p{
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 20px;
+  font-size: 12px;
+  background-color:#58090971;
+  margin-bottom: 20px;
+  
+  text-shadow: 5px 5px 6px #000000;
+color: rgb(197, 197, 197);}
+
+#select_box {
+  background-color: #580909;
+  color: wheat;
+  font-size: 15px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+  padding: 10px;
+}
+#select_box:hover{
+  background-color: black;
+  color: white;
+}
+
+#select_box_container {
+  display: flex;
+  align-items: center;
+}
+
+#select_box {
+  margin-right: 10px;
+}
+
+#confirm_button {
+  padding: 10px;
+  background-color: #000200;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#confirm_button:hover {
+  background-color:#580909;
+}
+#kotak_masuk, #kotak_masuk_kalimat p {
+  background-color:#58090944;
+}
+#kotak_masuk_kalimat p#judul{
+  background-color:#58090936;
+}
+#register-form p{
+color: white;
+}
+
+#welcome  {
+  position: relative;
+  margin: auto;
+  
+  top: 0;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-50%);
+  background-color:transparent;
+  color: white;
+  padding-top: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  
+  line-height: 0.5;
+}
+
+
+#selamat {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-family: 'pokefont';
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color: black;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 10px;
+}
+#selamat2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0);
+  font-family: 'pokefont';
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 10px;
+}
+#token2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(255, 255, 0, 0);
+  font-family: 'pokefont', sans-serif;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 10px;;
+}
+#token {
+  font-size: 30px;
+  font-weight: bold;
+  color: yellow;
+  font-family: 'pokefont', sans-serif;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color: black;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 10px;;
+}
+
+#judul_koleksi{
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(243, 223, 0);
+  font-family: 'fontbaru', sans-serif;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  
+  align-items: center;
+  height: 100%;
+  padding-bottom: 10px;
+  
+}
+  #judul_koleksi:hover{
+    font-size: 55px;
+  transition: font-size 0.3s ease-in-out;}
+
+
+
+
+
+.sorting {
+  
+  font-size: 16px;
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  padding-bottom: 20px;
+  overflow: hidden;
+  
+}
+
+.sorting:hover {
+  transition: font-size 0.3s ease-in-out;
+  font-size: 20px;
+  
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+  margin-right: 10px;
+  font-family: 'fontbaru', sans-serif;
+}
+
+#role{
+  padding-top: 15pxx;
+
+}
+
+
+
+td, th {
+  
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  
+  font-weight: bold;
+}
+
+
+.image_container_koleksi2 img {
+  max-width: 90%;
+  transition: max-width 0.3s ease-in-out;
+
+}
+.image_container_koleksi2 img:hover{
+
+  max-width: 100%;}
+
+#pilihan h2{
+  color: white;
+  text-align:left;
+  padding-left: 410px;
+  margin-left: 50px;
+  margin-top: 0;
+  text-shadow: 3px 3px 6px black;
+  font-size: 40px
+}
+
+#pick_user{
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+#pick_user:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.calc #kalkulator {
+  color: white;
+  text-align: center;
+}
+#tombol-pilih{
+  background: linear-gradient(to bottom right, rgb(202, 179, 6), yellow);
+
+  font-family: "fontbaru",sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  letter-spacing: 4px;
+  text-shadow: 3px 3px 6px black;
+  padding: 10px 20px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+#tombol-pilih:hover{
+  background-color: rgb(255, 255, 255);
+  background: white;
+  color: rgb(0, 0, 0);
+  
+  }
+
+
+#confirm-button{
+    background-color: rgba(218, 218, 62, 0.701);
+    font-family: "pokefont";
+    color: rgb(246, 246, 246);
+    font-size: 30px;
+    letter-spacing: 4px;
+    padding: 10px 20px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-left: 40%;
+    
+  }
+  #confirm-button:hover{
+    background-color: rgba(255, 255, 255, 0.811);
+    
+    color: rgb(0, 0, 0);
+    }
+    
+#confirm-button1{
+  background: linear-gradient(to bottom right, rgb(202, 179, 6), yellow);
+  font-family: "pokefont",sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  letter-spacing: 4px;
+  text-shadow: 3px 3px 6px black;
+  padding: 10px 20px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-left: 40%;
+  
+}
+#confirm-button1:hover{
+  background-color: white;
+  background: white;
+  color: rgb(0, 0, 0);
+  }
+
+
+    #slideshow-container2 {
+      position: relative;
+      margin: auto;
+      width: 290px;
+      height: 390px;
+      border: 10px solid rgba(238, 255, 0, 0);
+      overflow: hidden;
+    }
+    #slideshow-container2 img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      max-width: 100%;
+      max-height: 100%;
+      transition: opacity 1s ease-in-out;
+      opacity: 0;
+    }
+    .boxduel {
+      width: 100%;
+      height: 200px;
+      display: flex;
+ 
+    }
+    #container-player1 {
+      position: relative;
+      margin: auto;
+      width: 290px;
+      height: 390px;
+      border: 10px solid rgba(238, 255, 0, 0);
+      overflow: hidden;
+    
+    }
+    #container-player1 img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      max-width: 100%;
+      max-height: 100%;
+      transition: opacity 1s ease-in-out;
+      opacity: 0;
+      border-radius: 8px;
+    }
+    #container-player2 {
+      position: relative;
+      margin: auto;
+      width: 290px;
+      height: 390px;
+      border: 10px solid rgba(238, 255, 0, 0);
+      overflow: hidden;
+      
+    }
+    #container-player2 img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      max-width: 100%;
+      max-height: 100%;
+      transition: opacity 1s ease-in-out;
+      opacity: 0;
+      border-radius: 8px;
+    }
+    
+    
+
+
+.health-bar {
+  position: absolute;
+  bottom: 0px;
+  height: 36px;
+  width: calc(100% - 20px);
+  border-radius: 6px;
+  z-index: 1;
+}
+
+.health-bar.player1 {
+  left: 10px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  
+}
+
+.health-bar.player2 {
+  right: 10px;
+  border: 1px solid #000;
+ border-radius: 8px;
+  
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-6px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(6px, 0, 0);
+  }
+}
+
+.transparent-overlay {
+  position: absolute;
+  
+  bottom: 0;
+  background-color: rgba(0,0,0,0.001);
+  
+  z-index: 1;
+}
+.boxduel {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#nama-player1{
+  
+  font-size: 50px;
+  font-family: "pokefont";
+  margin-left: 9%;
+  margin-right: 15%;
+
+  padding-left: 30px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 6px black;
+  letter-spacing: 8px;
+  color: #ffffff;
+}
+#nama-player2{
+  color: #ffffff;
+  font-family: "pokefont";
+  margin-right: 10%;
+  font-size: 50px;
+  text-transform: uppercase;
+  padding-left: 12%;
+  text-shadow: 3px 3px 6px black;
+  letter-spacing: 8px;
+}
+.all-player{
+  display: flex;
+}
+
+#versus-text {
+  margin-top: 0%;
+  margin-right: 5%;
+  color: #d1d143ae;
+  
+  font-family: "pokefont";
+  font-size: 60px;
+  text-shadow: 3px 3px 6px black;
+ 
+}
+.overlay {
+  position: absolute;
+  bottom: -64px;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 0;
+  border-radius: 8px;
+}
+
+
+.petunjuk h2{
+  color: white;
+  font-family: "pokefont";
+  font-size: 30px;
+  margin-bottom: 0%; 
+  margin-left: 28%;
+  
+  padding: 20px;
+  margin-top: 18%;
+  letter-spacing: 5px;
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color: black;
+ 
+  text-shadow: 3px 3px 6px black;
+}
+.getar {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes getar {
+  0% { transform: translate(0, 0); }
+  10% { transform: translate(-5px, 0); }
+  20% { transform: translate(5px, 0); }
+  30% { transform: translate(-5px, 0); }
+  40% { transform: translate(5px, 0); }
+  50% { transform: translate(-5px, 0); }
+  60% { transform: translate(5px, 0); }
+  70% { transform: translate(-5px, 0); }
+  80% { transform: translate(5px, 0); }
+  90% { transform: translate(-5px, 0); }
+  100% { transform: translate(0, 0); }
+}
+.hit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hit #hit-player1 {
+  color: white;
+  font-family: "pokefont";
+  display: none;
+  position: absolute;
+  font-size: 20px;
+  animation: jump 0.8s ease-out, scale 0.5s ease-in 0.8s forwards;
+}
+
+.hit #hit-player2 {
+  color: white;
+  margin-left: auto;
+  font-family: "pokefont";
+  font-size: 20px;
+  display: none;
+  position: absolute;
+  animation: jump 0.8s ease-out, scale 0.5s ease-in 0.8s forwards;
+}
+
+@keyframes jump {
+  0% { bottom: 0; opacity: 0; }
+  25% { bottom: 50px; opacity: 1; }
+  75% { bottom: 50px; opacity: 1; }
+  100% { bottom: 0; opacity: 0; }
+}
+
+@keyframes scale {
+  0% { transform: scale(1); }
+  100% { transform: scale(0); }
+}
+@keyframes jumpLeft {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  10% {
+    transform: translateX(-10px) translateY(-30px);
+  }
+  30% {
+    transform: translateX(-20px) translateY(0);
+  }
+  50% {
+    transform: translateX(-30px) translateY(-30px);
+  }
+  70% {
+    transform: translateX(-40px) translateY(0);
+  }
+  90% {
+    transform: translateX(-50px) translateY(-30px);
+  }
+  100% {
+    transform: translateX(-60px) translateY(0);
+    opacity: 0;
+  }
+}
+
+
+@keyframes jumpRight {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  10% {
+    transform: translateX(10px) translateY(-30px);
+  }
+  30% {
+    transform: translateX(20px) translateY(0);
+  }
+  50% {
+    transform: translateX(30px) translateY(-30px);
+  }
+  70% {
+    transform: translateX(40px) translateY(0);
+  }
+  90% {
+    transform: translateX(50px) translateY(-30px);
+  }
+  100% {
+    transform: translateX(60px) translateY(0);
+    opacity: 0;
+  }
+}
+
+.hit #hit-player1 {
+  color: rgb(192, 196, 2);
+  font-size: 30px;
+  display: none;
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color: black;
+  animation: jumpLeft 0.6s ;
+}
+
+.hit #hit-player2 {
+  color: rgb(192, 196, 2);
+  font-size: 30px;
+  display: none;
+  position: absolute;
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color: black;
+  right: 0;
+  animation: jumpRight 0.6s ;
+}
+#halaman_history{
+    
+  max-width: 100%;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.3)),url(background/bgnew.gif);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center top;
+}
+
+#show-history {
+  background-color: #4d414175;
+ color: #f8f2f2;
+  float: right;
+  font-family: "pokefont";
+  letter-spacing: 5px;
+  padding: 10px;
+  border-radius: 8px;
+ 
+}
+#show-history:hover{
+  background-color: rgba(252, 252, 252, 0.801);
+  color: rgb(0, 0, 0);
+  float: right;
+  font-family: "pokefont";
+  letter-spacing: 5px;
+  padding: 10px;
+  border-radius: 8px;
+ 
+}
+.title-history {
+  color: white;
+  font-family: "pokefont";
+  text-align: center;
+  margin-top: 2%;
+  font-size: 40px;
+  letter-spacing: 5px;
+  }
+
+.container-history {
+  position:absolute;
+  margin-top: 23%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start; 
+  width: 100%;
+  max-width: 1800px; 
+  left: 0;
+  margin: 0 auto; 
+  margin-left: 5%;
+  background-color: rgba(7, 0, 0, 0);
+  padding: 20px 20px;
+  border-radius: 20px;
+  height: 800px;
+  justify-content: space-between;
+}
+
+.box-history{
+  
+  height: 400px;
+  display: flex;
+    width: 800px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background-color: rgb(243, 243, 243);
+    padding: 10px;
+    text-align: center;
+    
+    max-width: 80%;
+    border-radius: 20px;
+    padding-left: 0px;
+    justify-content: space-between;
+    flex-direction: row;
+  position: relative;
+  
+
+}
+.box-dalam{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0);
+  height: 250px;
+  overflow: auto;
+  border-radius: 8px;
+}
+.box-dalam2{
+  display: flex;
+  margin-top: 50px;
+  margin-right: 30px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0);
+  height: 250px;
+  border-radius: 8px;
+}
+.nama-player1{
+  display: flex;
+  position: absolute;
+  margin-left: 12%;
+  color: rgb(40, 39, 66);
+  font-family: "pokefont";
+  text-transform: uppercase;
+  left: 0;
+  text-align: left;
+  letter-spacing: 5px;  
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.nama-player2{
+  right: 0;
+  display: flex;
+  position: absolute;
+  margin-right: 12%;
+  color: rgb(40, 39, 66);
+  font-family: "pokefont";
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-weight: bold;
+} 
+.show_vs_history{
+  position: absolute;
+  
+  font-family: "pokefont";
+  margin-left:44%;
+  margin-top: 20%;
+  font-size: 60px;
+  letter-spacing: 4px;
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color: rgba(43, 1, 1, 0.384);
+  font-weight: bold;
+}
+.skor_history1{
+  display: flex;
+  color: rgb(243, 234, 234);
+  font-size: 60px;
+  font-family: "pokefont";
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 20%;
+  left: 0;
+  -webkit-text-stroke-width:2px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.skor_history2{
+  margin-top: 20%;
+  display: flex;
+  color: rgb(243, 234, 234);
+  font-size: 60px;
+  font-family: "pokefont";
+  position: absolute;
+  -webkit-text-stroke-width:2px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  right: 0;
+  margin-right: 35%;
+  font-weight: bold;
+}
+
+.show-detik{
+position:absolute;
+display: flex;
+left: 0;
+font-family: "pokefont";
+letter-spacing: 3px;
+color: rgb(0, 0, 0);
+margin-left: 10%;
+margin-top:43%;
+font-size: 17px;
+}
+.show-detik2{
+  position:absolute;
+  display: flex;
+  right: 0;
+  font-family: "pokefont";
+  letter-spacing: 3px;
+  color: rgb(0, 0, 0);
+  margin-right: 8%;
+  margin-top:43%;
+  font-size: 17px;
+}
+.show-tanggal{
+  position: absolute;
+  color:rgb(0, 0, 0);
+  left:0;
+  font-family: "pokefont";
+  margin-top:42%; 
+  margin-left: 5%;
+  font-size: 17px;
+  margin-top:39%;
+  letter-spacing: 4px;
+  
+}
+.show-tanggal2{
+  position: absolute;
+  color:rgb(0, 0, 0);
+  font-size: 17px;
+  right: 0;
+  font-family: "pokefont";
+  margin-right: 5%;
+  margin-top:39%;
+  letter-spacing: 4px;
+}
+
+.tampil-detik1{
+  position:absolute;
+  display: flex;
+  left: 0;
+  font-family: "pokefont";
+  letter-spacing: 3px;
+  color: rgb(0, 0, 0);
+  margin-left: 35%;
+  margin-top: 33%;
+  -webkit-text-stroke-width:1px;
+    -webkit-text-stroke-color: black;
+}
+
+.tampil-detik2{
+  position:absolute;
+  display: flex;
+  right: 0;
+  font-family: "pokefont";
+  letter-spacing: 3px;
+  color: rgb(5, 5, 5);
+  margin-right: 35%;
+  margin-top:33%;
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color: black;
+}
+
+.show-tutor{
+  position: absolute;
+  color: white;
+  font-size: 70px;
+  font-family: "pokefont";
+  display: flex;
+  right: 0;
+  padding-right: 20px;
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color: black;
+  
+}
+
+#header_history nav ul li a {
+  color: white;
+  font-size: 28px;
+  font-family: 'pokefont', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  padding-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  
+  cursor: pointer;
+}
+
+#header_history nav ul li a:hover {
+  color: rgb(167, 134, 69);
+  font-size: 32px;
+}
+
+#header_history {
+  margin-bottom: 0;
+  background-color: #000000;
+  height: 70px;
+  padding: 10px 20px;
+  
+}
+
+nav ul li a#hal-history { 
+    
+  color: rgb(167, 134, 69);
+  padding-bottom: 10px;
+  margin-left: 40px;
+}
+
+#header_arena nav ul li a {
+  color: white;
+  font-size: 28px;
+  font-family: 'pokefont', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  padding-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  
+  cursor: pointer;
+}
+
+#header_arena nav ul li a:hover {
+  color: rgb(167, 134, 69);
+  font-size: 32px;
+}
+
+#header_arena {
+  margin-bottom: 0;
+  background-color: #000000;
+  height: 70px;
+  padding: 10px 20px;
+}
+
+nav ul li a#hal-arena { 
+    
+  color: rgb(167, 134, 69);
+  padding-bottom: 10px;
+  margin-left: 40px;
+}
+
+.keluar-button{
+ background-color: #4d414175;
+ color: #f8f2f2;
+  position: absolute;
+  display: flex;
+  left: 0;
+  margin-left: 3%;
+  font-family: "pokefont";
+  letter-spacing: 4px;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+.keluar-button:hover{
+  background-color:rgba(255, 255, 255, 0.466) ;
+  color:  #000000;
+   position: absolute;
+   display: flex;
+   left: 0;
+   
+ }
+
+ .cari-lawan {
+    color: rgb(255, 255, 255);
+    display: flex;
+    position: absolute;
+    margin-left: 20%;
+    font-family: "pokefont";
+    background-color: rgba(0, 0, 0, 0.637);
+    padding: 10px;
+    font-size: 20px;
+    height: 80px;
+    width: 90px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    letter-spacing: 7px;
+}
+ .cari-lawan:hover{
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.637);
+ }
+
+ .gallery{
+  margin-top: 7%;
+  align-content: center;
+  color: white;
+  
+  font-size: 40px;
+  background-color: rgba(20, 16, 16, 0.833);
+  align-items: center;
+  height:auto;
+  background-color: black;
+  
+ }
+ .judul-gallery{
+  text-align: center;
+  font-family: "pokefont";
+  margin-top: 40px;
+  letter-spacing: 5px;
+ }
+
+ .container-img-gallery{
+  margin-top: 5%;
+  margin-left: 0%;
+  
+  background-color: rgba(255, 255, 255, 0.16);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  width: auto;
+ 
+  margin: 20;
+  align-items: center;
+  padding: 20px 20px;
+  border-radius: 20px;
+ }
+ .image_container_koleksi1{
+
+  width: 15%;
+  margin-bottom: 20px;
+  
+  
+  padding: 10px;
+
+  transition: transform 0.5s ease-in-out;
+  
+  padding-left: 0px;
+}
+
+.image_container_koleksi1 img {
+  max-width: 90%;
+  transition: max-width 0.3s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #ccc;
+ 
+  
+}
+.image_container_koleksi1 img:hover{
+
+  max-width: 100%;}
+
+
+.select_role{
+  font-size: 10px;
+  font-family: "pokefont";
+}
+
+#halaman_admin {
+    
+  max-width: 100%;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.3)),url(background/bgnew.gif);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center top;
+}
+
+table {
+  left: 0;
+  font-size: 20px;
+  font-family: 'fontbaru';
+  width: 100%;
+  
+  color: white;
+  margin-left: 0%;
+  top: 0; /* menempatkan tabel di atas layar */
+  z-index: 9000; 
+  border:1;
+  text-shadow: 3px 3px 6px black;
+  background-color: rgba(255, 255, 255, 0.174);
+  height: auto;
+  text-transform: uppercase;
+
+}
+.tombolhapus a{
+  color: white;
+}
+.tombolhapus a:hover{
+  color: rgb(118, 2, 2);
+}
+tr:hover {
+  background-color: rgba(0, 0, 0, 0.372);
+}
+
+
+
+
+
+#namakartuu,#overallkartuu,#linkkartu{
+  font-family: "fontbaru";
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: white;
+}
+
+
+label[for="nama-kartu"],label[for="ovr-kartu"],label[for="link-kartu"]{
+  text-shadow: 5px 5px 6px #000000;
+  font-family:'pokefont', sans-serif ;
+  letter-spacing: 2px;
+  color:white;
+ 
+  display: block;
+  margin-bottom: 10px;
+}
+
+label[for="nama_kartu"],label[for="overall"],label[for="link"]{
+  text-shadow: 5px 5px 6px #000000;
+  font-family:'pokefont', sans-serif ;
+  letter-spacing: 2px;
+  color:white;
+  font-size: 25px;
+  display: block;
+  margin-bottom: 10px;
+}
+.updt{
+  margin-left: 37%;
+  font-size: 50px;
+  text-shadow: 5px 5px 6px #000000;
+  font-family:'pokefont', sans-serif ;
+  letter-spacing: 2px;
+  color:white;
+    padding-bottom: 40px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.show-loading div{
+  color: white;
+  font-size: 500px;
+}
+
+.contact form{
+  margin:0 auto;
+  background-color: var(--light-bg);
+  border-radius: .5rem;
+  border:var(--border);
+  padding:2rem;
+  max-width: 50rem;
+  margin:0 auto;
+  text-align: center;
+}
+
+.contact form h3{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color:var(--black);
+}
+
+.contact form .box{
+  margin:1rem 0;
+  width: 100%;
+  border:var(--border);
+  background-color: var(--white);
+  padding:1.2rem 1.4rem;
+  font-size: 1.8rem;
+  color:var(--black);
+  border-radius: .5rem;
+}
+
+.contact form textarea{
+  height: 20rem;
+  resize: none;
+}
+.userkomen{
+  background-color: #4d414175;
+  color: #f8f2f2;
+   position: absolute;
+   display: flex;
+   right: 0;
+   margin-right: 2%;
+   font-family: "pokefont";
+   letter-spacing: 4px;
+   padding: 10px;
+   font-size: 17px;
+   border-radius: 20px;
+ }
+
+ .userkomen:hover{
+   background-color:rgba(255, 255, 255, 0.466) ;
+   color:  #000000;
+    position: absolute;
+    display: flex;
+    right:0;
+ }
+
+.komentar input[type="submit"] {
+    padding: 10px;
+    font-family: "pokefont";
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+
+.komentar textarea{
+  resize:none;
+  padding: 10px;
+  font-family: "pokefont";
+  letter-spacing: 5px;
+  font-size: 14px;
+}
+select {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Ganti dengan font yang diinginkan */
+  font-size: 20px; /* Ganti dengan ukuran font yang diinginkan */
+  background-color: rgba(255, 255, 255, 0.854);
+  color: rgb(0, 0, 0);
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+label[for="showpass"] {
+  font-family: "pokefont"; /* Ganti dengan font yang diinginkan */
+  font-size: 15px; /* Ganti dengan ukuran font yang diinginkan */
+  text-shadow: 3px 3px 9px rgb(0, 0, 0);
+  letter-spacing: 3px;
+
+}
+.button-tambah{
+  position: absolute;
+  display: flex;
+  background-color: #4d414175;
+  color: #f8f2f2;
+  width: auto;
+  height: auto; 
+  margin-left: 5%;
+  left: 0;
+  padding: 30px;
+  padding-top: 20px;
+  font-size: 30px;
+  font-family: "pokefont";
+  letter-spacing: 4px;
+  border-radius: 20px;
+}
+.button-tambah:hover{
+  position: absolute;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.797);
+  color: rgb(0, 0, 0);
+  width: auto;
+  height: auto;
+  margin-left: 5%;
+  left: 0;
+  padding: 30px;
+  padding-top: 20px;
+  font-size: 30px;
+  font-family: "pokefont";
+  letter-spacing: 4px;
+  border-radius: 20px;
+}
+
+
+.admin-gallery{
+  margin-top: 7%;
+  align-content: center;
+  color: white;
+  
+  font-size: 40px;
+  
+  align-items: center;
+  height:auto;
+  margin-left: 10%;
+  
+ }
+ .judul-gallery-admin{
+  position: absolute;
+  
+  text-align: center;
+  font-family: "pokefont";
+  top: 0;
+  margin-top: 5%;
+  letter-spacing: 5px;
+  margin-left: 37%;
+ }
+
+ .container-img-gallery-admin{
+  margin-top: 5%;
+  margin-left: 0%;
+  
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  width: auto;
+ 
+  margin: 20;
+  align-items: center;
+  padding: 20px 20px;
+  border-radius: 20px;
+ }
+
+ .button-galeri{
+  margin-top:10%;
+  position: absolute;
+  display: flex;
+  background-color: #4d414175;
+  color: #f8f2f2;
+  width: auto;
+  height: auto;
+  margin-left: 5%;
+  left: 0;
+  padding: 30px;
+  padding-top: 20px;
+  font-size: 30px;
+  font-family: "pokefont";
+  letter-spacing: 4px;
+  border-radius: 20px;
+ }
+ .button-galeri:hover{
+  margin-top:10%;
+  position: absolute;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.797);
+  color: rgb(0, 0, 0);
+  width: auto;
+  height: auto;
+  margin-left: 5%;
+  left: 0;
+  padding: 30px;
+  padding-top: 20px;
+  font-size: 30px;
+  font-family: "pokefont";
+  letter-spacing: 4px;
+  border-radius: 20px;
+ }
+ .comments {
+	margin: 20px 0;
+}
+
+.comment {
+	margin-bottom: 20px;
+	padding: 10px;
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.comment-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.comment-author {
+	margin: 0;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  text-transform: capitalize;
+}
+
+.comment-date {
+	font-size: 12px;
+	color: #666;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.comment-body {
+	margin: 0;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+.tombol-hapus-komen {
+  
+  color: black;
+ 
+  border-radius: 10px;
+  padding: 10px;
+  bottom: 0;
+  display: flex;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+.tombol-hapus-komen:hover{
+  
+  color: rgb(114, 4, 4);
+ 
+  border-radius: 10px;
+  padding: 10px;
+  bottom: 0;
+  display: flex;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+#tombol-pilih-baru{
+  background: linear-gradient(to bottom right, rgb(202, 179, 6), yellow);
+  font-family: "fontbaru",sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  letter-spacing: 4px;
+  text-shadow: 3px 3px 6px black;
+  padding: 10px 20px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  display: flex;
+  position: absolute;
+  margin-left:-2%;
+  margin-top: 10%;
+  
+}
+#tombol-pilih-baru:hover{
+  background-color: rgb(255, 255, 255);
+  background: white;
+  color: rgb(0, 0, 0);
+}
+.image_container_koleksi{
+  width: 19%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  padding-left: 0px;
+  padding-right: 30px;
+  padding-bottom: 80px;
+}
+.image_container_koleksi img {
+  max-width: 90%;
+  transition: max-width 0.3s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+}
+.image_container_koleksi img:hover{
+  max-width: 100%;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.container_koleksi {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  background-color: rgba(7, 0, 0, 0);
+  border-radius: 20px;
+}
+
+.button-tambah-owner {
+  background-color: #0c4a317f;
+  color: rgba(255, 255, 255, 0.701);
+  width: 19%;
+  height: 250px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+  padding-left: 0px;
+  font-size: 80px;
+  justify-content: center;
+  align-items: center; 
+}
+
+.button-tambah-owner:hover {
+  background-color: #ffffff49;
+  color: rgb(0, 0, 0);
+  
+}
+.yangMenang{
+  display: flex;
+  position: absolute;
+  margin-left: 42%;
+  color: rgb(24, 22, 69);
+  font-family: "pokefont";
+  text-transform: uppercase;
+  left: 0;
+  text-align: left;
+  letter-spacing: 5px;  
+  margin-top: 8%;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  
+}
+.tampilWin{
+  display: flex;
+  position: absolute;
+  margin-left: 44%;
+  color: rgb(227, 243, 54);
+  font-family: "fontbaru";
+  text-transform: uppercase;
+  left: 0;
+  text-align: left;
+  letter-spacing: 5px;  
+  margin-top: 15%;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-text-stroke-width:1px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke-color: rgb(188, 199, 64);
+}
